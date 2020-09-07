@@ -1,0 +1,31 @@
+
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+	
+/*General CSS - normalize file contains most of it */
+	
+*{
+	box-sizing: border-box;
+}  
+	
+/* Using rems - set up to be 10px = 1 rem*/
+
+body{
+	font-size: 62.5%;
+}
+
+
+
+
+	
+h2 {
+	position: relative;
+	left: 15px;
+	top: 20px;
+	font-family: GothamPro, Helvetica
+	font-size: 70px;
+	line-height: 10%;
+	
+}
+
