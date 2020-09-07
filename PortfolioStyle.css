@@ -110,7 +110,7 @@ li a:hover {
 .box {
 	text-align: center;
 	width: 30%;
-	border: 1px solid #CED3DC;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .medbox {
@@ -139,21 +139,15 @@ li a:hover {
 }
 
 .portfolio,
-.contact .container {
+footer {
 	background-color: #ABA9C3;
 }
 
 
-.contact .container {
-	height: 50vh;
+footer {	
+	text-align: center;
+	padding: 10px;
 }
-
-
-.contactinfo a {
-	text-decoration: none;
-	color: #88292F;
-}
-
 
 
 
@@ -162,6 +156,7 @@ li a:hover {
 /* Social Buttons */
 
  /* Style all font awesome icons */
+ 
 .fa {
  	padding: 20px;
   	font-size: 1rem;
@@ -170,13 +165,13 @@ li a:hover {
   	text-decoration: none;
 }
 
-/* Add a hover effect if you want */
+/* Add a hover effect */
+
 .fa:hover {
  	 opacity: 0.7;
 }
 
 /* Set a specific color for each brand */
-
 
 .fa-twitter {
 	background: #55ACEE;
@@ -205,7 +200,18 @@ li a:hover {
 
 
 
+/*  In case you bring back dedicated Contact section
 
+.contact .container {
+	height: 50vh;
+}
+
+
+.contactinfo a {
+	text-decoration: none;
+	color: #88292F;
+}
+*/
 
 
 
