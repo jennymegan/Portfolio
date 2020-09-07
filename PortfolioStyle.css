@@ -28,6 +28,28 @@ Accents: #88292F (Red)
 */
 
 
+/* 
+This ought to make the S spin but it freaks the whole site out...
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+
+
+
+
+.spinner {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+
+*/
+
+
+
+
 
 /*Text*/
 
@@ -228,22 +250,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  In case you bring back dedicated Contact section
 
 .contact .container {
@@ -255,6 +261,38 @@ footer {
 	text-decoration: none;
 	color: #88292F;
 }
+
+
+
+
+
+And here's the homemade spin that doesn't work 
+
+@keyframes spin {
+  0%, 100% {
+	  transform: rotate(none);
+  }
+  
+  15% {transform: rotate(45deg);
+  
+  }
+  30% {transform: rotate(90deg);
+  
+  }
+  45% {transform: rotate(135deg);
+  
+  }
+  60% {transform: rotate(180deg);
+  
+  }
+  75% {transform: rotate(225deg);
+  
+  }
+  90% {transform: rotate(270deg);
+ 
+  }
+}
+
 */
 
 
