@@ -5,27 +5,23 @@
 	
 /*General CSS - normalize file contains most of it */
 	
-*{
+* {
 	box-sizing: border-box;
 }  
 	
 /* Using rems - set up to be 10px = 1 rem*/
 
-body{
+body {
 	font-size: 62.5%;
 }
 
 
-
-
-	
-h2 {
-	position: relative;
-	left: 15px;
-	top: 20px;
-	font-family: GothamPro, Helvetica
-	font-size: 70px;
-	line-height: 10%;
-	
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }
+
+
 
