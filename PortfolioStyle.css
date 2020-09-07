@@ -13,15 +13,77 @@
 
 body {
 	font-size: 62.5%;
+	font-family: "Josefin Sans";
 }
 
+/*Text*/
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+h6 {
+	font-size: 0.5rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+
+/*Nav Bar*/
+
+nav {
+	position:fixed;
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+li {
+	float: left;	
+	list-style-type: none;
+
+}
+
+li a {
+	display: inline-block;
+	padding: 8px;
+	background-color: #FCF7F8;
+	text-decoration: none;
+	color: #000500;
+	border-right: 1px solid #000500;
+}
+
+li a:hover {
+	background-color: #ABA9C3;
+}
+
+
+
+/*Body Styling*/
 
 .container {
 	display: flex;
+	height: 100vh;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
+	background-color: #FCF7F8;
+	padding: 20px;
 }
 
-
-
+.box {
+	border: 1px solid red;
+}
