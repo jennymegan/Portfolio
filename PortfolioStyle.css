@@ -191,6 +191,48 @@ footer {
 
 
 
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+	.container .box {
+		width: 95%;
+		margin: 10px 10px;
+	}
+	
+	.intropage .container h1 {
+		font-size: 4rem;
+		padding: 10px;	
+	}
+	
+	nav li{
+		font-size: 1rem;
+	}
+	
+	.portfolio .container {
+		height: auto;
+	}
+	
+	.medbox {
+		width: 95%;
+		overflow: auto;
+	}
+	
+	.li {
+		font-size: 0.8rem;
+		display: inline;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
