@@ -1,0 +1,221 @@
+
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+	
+/*General CSS - normalize file contains most of it */
+	
+* {
+	box-sizing: border-box;
+}  
+	
+/* Using rems - set up to be 10px = 1 rem*/
+
+body {
+	font-size: 62.5%;
+	font-family: "Josefin Sans";
+	font-weight: 100;
+	background-color: #FCF7F8;
+}
+/* Colours
+
+Background: #FCF7F8 (Pinky White)
+Borders: #CED3DC (Grey)
+Black ish: #000500
+Hover color: #ABA9C3 (Lilac)
+Accents: #88292F (Red)
+
+*/
+
+
+
+/*Text*/
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 200;
+	padding: 20px 0 0 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 200;
+}
+h6 {
+	font-size: 0.9rem;
+	padding: 20px;
+	font-weight: 100;
+}
+
+p {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+
+/*Nav Bar*/
+
+nav {
+	overflow: hidden;
+	position:fixed;
+	display: flex;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	font-size: 1.5rem;
+	background-color: #FCF7F8;
+}
+
+li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 0 20px 0;
+
+}
+
+li a {
+	padding: 8px;
+	text-decoration: none;
+	color: #000500;
+	border-right: 1px solid #000500;
+}
+
+li a:hover {
+	background-color: #ABA9C3;
+}
+
+
+
+/*Body Styling*/
+
+.container {
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px;
+}
+
+
+
+.box {
+	text-align: center;
+	width: 30%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.medbox {
+	text-align: center;
+	width: 40%;
+	
+}
+
+.box img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100%;
+  	height: 25vh;
+  	background-color: #CED3DC;
+}
+
+
+.aboutme img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+    padding:10px;
+    border: 1px solid #CED3DC;
+}
+
+.portfolio,
+footer {
+	background-color: #ABA9C3;
+}
+
+
+footer {	
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+/* Social Buttons */
+
+ /* Style all font awesome icons */
+ 
+.fa {
+ 	padding: 20px;
+  	font-size: 1rem;
+  	width: 50px;
+  	text-align: center;
+  	text-decoration: none;
+}
+
+/* Add a hover effect */
+
+.fa:hover {
+ 	 opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+
+.fa-linkedin {
+ 	background: #007bb5;
+  	color: white;
+} 
+
+.fa-github {
+ 	background: #24292e;
+  	color: white;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/*  In case you bring back dedicated Contact section
+
+.contact .container {
+	height: 50vh;
+}
+
+
+.contactinfo a {
+	text-decoration: none;
+	color: #88292F;
+}
+*/
+
+
+
+
+
