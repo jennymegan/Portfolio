@@ -266,7 +266,10 @@ footer {
 	nav li{
 		font-size: 0.8rem;
 	}
-		
+	
+	footer {
+		box-shadow: none;
+	}	
 }
 
 
