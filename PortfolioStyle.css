@@ -127,11 +127,14 @@ li a:hover {
 	box-shadow: 0 5px 5px -5px #000500;
 	background-color: #edeef2;
 	overflow: hidden;
+	margin: 10px;
+	min-height: 350px;
 }
 
 .medbox {
 	text-align: center;
 	width: 40%;	
+	
 }
 
 .box img {
@@ -186,7 +189,6 @@ footer {
 .social {
 	margin: 10px;
 }
-
 
 
 
@@ -250,7 +252,7 @@ footer {
 	
 }
 
-@media screen and (max-height: 890px) {
+/*@media screen and (max-height: 890px) {
 	
 	.container .box {
 		width: 95%;
@@ -258,7 +260,7 @@ footer {
 	}
 	
 }
-
+*/
 
 
 @media screen and (max-width: 600px) {
