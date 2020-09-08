@@ -35,10 +35,6 @@ Accents: #88292F (Red)
 
 
 
-
-
-
-
 /*Text*/
 
 h1 {
@@ -164,7 +160,8 @@ li a:hover {
 .aboutmebackground {
 	background-image: url(AboutMeBG3.jpg);
 	background-size: auto 100%;
-	background-repeat: no repeat;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .portfolio,
@@ -235,6 +232,7 @@ footer {
 
 /* Media Queries */
 
+
 @media screen and (max-width: 900px) {
 	
 	.medbox {
@@ -245,6 +243,15 @@ footer {
 	.portfolio .container {
 		height: auto;
 	}
+	.container .box {
+		width: 95%;
+		margin: 10px 10px;
+	}
+	
+}
+
+@media screen and (max-height: 890px) {
+	
 	.container .box {
 		width: 95%;
 		margin: 10px 10px;
@@ -285,6 +292,19 @@ footer {
 		box-shadow: none;
 	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
