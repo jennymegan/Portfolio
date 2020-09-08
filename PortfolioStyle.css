@@ -110,6 +110,7 @@ li a:hover {
 .container {
 	display: flex;
 	height: 90vh;
+	min-height: 800px;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
