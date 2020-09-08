@@ -2,6 +2,8 @@
 /*Font*/
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400&display=swap');
 	
 /*General CSS - normalize file contains most of it */
 	
@@ -13,15 +15,18 @@
 
 body {
 	font-size: 62.5%;
-	font-family: "Josefin Sans";
-	font-weight: 100;
-	background-color: #FCF7F8;
+	font-family: "Hind Guntur";
+	font-weight: 300;
+	color: #000500 ;
+	background-color: #edeef2;
 }
 /* Colours
 
-Background: #FCF7F8 (Pinky White)
+Background: #edeef2 ( White)
 Borders: #CED3DC (Grey)
 Black ish: #000500
+
+
 Hover color: #ABA9C3 (Lilac)
 Accents: #88292F (Red)
 
@@ -29,17 +34,20 @@ Accents: #88292F (Red)
 
 
 
+
 /*Text*/
 
 h1 {
 	font-size: 5rem;
+	font-family: "Josefin Sans";
+	padding: 0 0 0 20px;
 }
 
 h2 {
 	font-size: 2rem;
 	text-align: center;
 	font-weight: 200;
-	padding: 20px 0 0 0;
+	padding: 50px 0 0 0;
 }
 
 h3 {
@@ -52,8 +60,9 @@ h4 {
 }
 h6 {
 	font-size: 0.9rem;
-	padding: 20px;
+	padding: 20px 0 0 0;
 	font-weight: 100;
+	margin: 0;
 }
 
 p {
@@ -71,8 +80,9 @@ nav {
 	top: 0;
 	width: 100%;
 	margin: 0;
+	padding: 0 0 5px 0;
 	font-size: 1.5rem;
-	background-color: #FCF7F8;
+	background-color: #edeef2;
 }
 
 li {
@@ -83,7 +93,7 @@ li {
 }
 
 li a {
-	padding: 8px;
+	padding: 12px;
 	text-decoration: none;
 	color: #000500;
 	border-right: 1px solid #000500;
@@ -99,24 +109,31 @@ li a:hover {
 
 .container {
 	display: flex;
-	height: 100vh;
-	justify-content: space-between;
+	height: 90vh;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 20px;
 }
 
-
+.intropage .container {
+	height: 100vh;
+}
 
 .box {
 	text-align: center;
 	width: 30%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 45%;
+	box-shadow: 0 5px 5px -5px #000500;
+	background-color: #edeef2;
+	overflow: hidden;
+	margin: 10px;
+	min-height: 350px;
 }
 
 .medbox {
 	text-align: center;
-	width: 40%;
+	width: 40%;	
 	
 }
 
@@ -124,20 +141,30 @@ li a:hover {
   	display: block;
   	margin-left: auto;
   	margin-right: auto;
-  	width: 100%;
+  	object-fit: cover;
+	width: 100%;
   	height: 25vh;
   	background-color: #CED3DC;
 }
 
 
-.aboutme img {
-    display: block;
+.medbox img {
+  	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
     border-radius: 8px;
     padding:10px;
     border: 1px solid #CED3DC;
+}
+
+.aboutmebackground {
+	background-image: url(AboutMeBG3.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .portfolio,
@@ -145,12 +172,23 @@ footer {
 	background-color: #ABA9C3;
 }
 
+.container.project {
+	overflow: scroll;
+	object-fit: cover;
+	width: 100vw;
+	height: auto;
+}
+
 
 footer {	
 	text-align: center;
 	padding: 10px;
+	box-shadow: inset 0 0 10px #000500;
 }
 
+.social {
+	margin: 10px;
+}
 
 
 
@@ -165,6 +203,7 @@ footer {
   	width: 50px;
   	text-align: center;
   	text-decoration: none;
+	margin: 5px;
 }
 
 /* Add a hover effect */
@@ -193,6 +232,76 @@ footer {
 
 
 
+/* Media Queries */
+
+
+@media screen and (max-width: 900px) {
+	
+	.medbox {
+		width: 95%;
+		height: auto;
+	}
+	.aboutme .container,
+	.portfolio .container {
+		height: auto;
+	}
+	.container .box {
+		width: 95%;
+		margin: 10px 10px;
+	}
+	
+}
+
+/*@media screen and (max-height: 890px) {
+	
+	.container .box {
+		width: 95%;
+		margin: 10px 10px;
+	}
+	
+}
+*/
+
+
+@media screen and (max-width: 600px) {
+
+	
+	.intropage .container h1 {
+		font-size: 4rem;
+		padding: 10px;	
+	}
+	
+	nav li{
+		font-size: 1rem;
+	}
+	
+	.project.container {
+		width: 100vw;
+	}
+
+	
+}
+
+
+@media screen and (max-width: 380px) {
+
+	
+	nav li{
+		font-size: 0.8rem;
+	}
+	
+	footer {
+		box-shadow: none;
+	}	
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -213,9 +322,58 @@ footer {
 	text-decoration: none;
 	color: #88292F;
 }
+
+
+
+
+
+And here's the homemade spin that doesn't work 
+
+@keyframes spin {
+  0%, 100% {
+	  transform: rotate(none);
+  }
+  
+  15% {transform: rotate(45deg);
+  
+  }
+  30% {transform: rotate(90deg);
+  
+  }
+  45% {transform: rotate(135deg);
+  
+  }
+  60% {transform: rotate(180deg);
+  
+  }
+  75% {transform: rotate(225deg);
+  
+  }
+  90% {transform: rotate(270deg);
+ 
+  }
+}
+
 */
 
+/* 
+This ought to make the S spin but it freaks the whole site out...
 
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+
+
+
+
+.spinner {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+
+*/
 
 
 
