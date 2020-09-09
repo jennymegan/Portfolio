@@ -1,0 +1,279 @@
+
+/*Font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400&display=swap');
+	
+/*General CSS - normalize file contains most of it */
+	
+* {
+	box-sizing: border-box;
+}  
+	
+/* Using rems - set up to be 10px = 1 rem*/
+
+body {
+	font-size: 62.5%;
+	font-family: "Hind Guntur";
+	font-weight: 300;
+	color: #000500;
+	background-color: #edeef2;
+}
+/* Colours
+
+Background: #edeef2 ( White)
+Borders: #CED3DC (Grey)
+Black ish: #000500
+
+
+Hover color: #ABA9C3 (Lilac)
+Accents: #88292F (Red)
+
+*/
+
+
+/*Text*/
+
+h1 {
+	font-size: 5rem;
+	font-family: "Josefin Sans";
+	padding: 0 0 0 20px;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 200;
+	padding: 50px 0 0 0;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 200;
+}
+h6 {
+	font-size: 0.9rem;
+	padding: 20px 0 0 0;
+	font-weight: 100;
+	margin: 0;
+}
+
+p {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+/*Nav Bar*/
+
+nav {
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 5px 0;
+	font-size: 1.5rem;
+	background-color: #edeef2;
+}
+
+li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 0 20px 0;
+
+}
+
+li a {
+	padding: 12px;
+	text-decoration: none;
+	color: #000500;
+	border-right: 1px solid #000500;
+}
+
+li a:hover {
+	background-color: #ABA9C3;
+}
+
+
+
+/*Body Styling*/
+
+.container {
+	display: flex;
+	height: 90vh;
+	min-height: 850px;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: stretch;
+	padding: 20px;
+}
+
+.intropage .container {
+	height: 100vh;
+	align-items: center;
+}
+
+.projectbox {
+	text-align: center;
+	width: 30%;
+	box-shadow: 0 5px 5px -5px #000500;
+	background-color: #edeef2;
+	overflow: hidden;
+	margin: 10px;
+	min-height: 350px;
+	min-width: 0px;
+}
+
+
+.projectbox img {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	object-fit: cover;
+	width: 100%;
+	height: 200px;
+  	background-color: #CED3DC;
+}
+
+.projectinfo {
+	height: 50%;
+	flex-shrink: 0;
+}
+
+.aboutmebox {
+	text-align: center;
+	width: 40%;	
+}
+
+
+.aboutmebox img {
+  	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+    border-radius: 8px;
+    padding:10px;
+    border: 1px solid #CED3DC;
+}
+
+.aboutmebackground {
+	background-image: url(AboutMeBG3.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.portfolio,
+footer {
+	background-color: #ABA9C3;
+}
+
+.container.project {
+	overflow: scroll;
+	object-fit: cover;
+	width: 100vw;
+	height: auto;
+}
+
+footer {	
+	text-align: center;
+	padding: 10px;
+	box-shadow: inset 0 0 10px #000500;
+}
+
+.social {
+	margin: 10px;
+}
+
+
+
+
+/* Social Buttons */
+
+ /* Style all font awesome icons */
+ 
+.fa {
+ 	padding: 20px;
+  	font-size: 1rem;
+  	width: 50px;
+  	text-align: center;
+  	text-decoration: none;
+	margin: 5px;
+}
+
+/* Add a hover effect */
+
+.fa:hover {
+ 	 opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-twitter {
+	background: #55ACEE;
+	color: #ffffff;
+}
+
+.fa-linkedin {
+ 	background: #007bb5;
+  	color: #ffffff;
+} 
+
+.fa-github {
+ 	background: #24292e;
+  	color: #ffffff;
+} 
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 900px) {	
+	.aboutmebox {
+		width: 95%;
+		height: auto;
+	}
+	.aboutme .container,
+	.portfolio .container {
+		height: auto;
+	}
+	.container .projectbox {
+		width: 95%;
+		margin: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {	
+	.intropage .container h1 {
+		font-size: 4rem;
+		padding: 10px;	
+	}
+	
+	nav li{
+		font-size: 1rem;
+	}
+	
+	.project.container {
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 380px) {	
+	nav li {
+		font-size: 0.8rem;
+	}	
+	footer {
+		box-shadow: none;
+	}	
+}
+
+
+
