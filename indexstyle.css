@@ -176,7 +176,7 @@ li a:hover {
 
 .aboutmebackground {
 	background-image: url(AboutMeBG3.jpg);
-	background-size: auto 100%;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -249,6 +249,15 @@ footer {
  	background: #24292e;
   	color: #ffffff;
 } 
+
+
+
+
+
+
+
+
+
 
 
 
