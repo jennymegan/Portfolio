@@ -61,6 +61,7 @@ p {
 	font-size: 1rem;
 	text-align: center;
 	margin: 0 20px;
+	line-height: 1.2;
 }
 
 /*Nav Bar*/
@@ -168,6 +169,11 @@ li a:hover {
     border: 1px solid #CED3DC;
 }
 
+.aboutmebox a {
+	text-decoration: none;
+	color: #000500;
+}
+
 .aboutmebackground {
 	background-image: url(AboutMeBG3.jpg);
 	background-size: auto 100%;
@@ -243,6 +249,8 @@ footer {
  	background: #24292e;
   	color: #ffffff;
 } 
+
+
 
 
 /* Media Queries */
@@ -321,30 +329,6 @@ footer {
 	white-space: nowrap;
 }
 
-
-
-/* 
-
-15% {transform: rotate(45deg);
-
-}
-30% {transform: rotate(90deg);
-
-}
-45% {transform: rotate(135deg);
-
-}
-60% {transform: rotate(180deg);
-
-}
-75% {transform: rotate(225deg);
-
-}
-90% {transform: rotate(270deg);
-
-}
-
-*/
 
 
 
