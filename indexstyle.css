@@ -17,7 +17,7 @@ body {
 	font-size: 62.5%;
 	font-family: "Hind Guntur";
 	font-weight: 300;
-	color: #000500 ;
+	color: #000500;
 	background-color: #edeef2;
 }
 /* Colours
@@ -72,7 +72,7 @@ p {
 
 nav {
 	overflow: hidden;
-	position:fixed;
+	position: fixed;
 	display: flex;
 	top: 0;
 	width: 100%;
@@ -110,7 +110,7 @@ li a:hover {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 20px 20px;
+	padding: 20px;
 }
 
 .intropage .container {
