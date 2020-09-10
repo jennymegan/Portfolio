@@ -94,7 +94,7 @@ li a {
 	margin: 0;
 }
 
-.lastnav a {
+.hidenavborderrh a {
 	border-right: none;
 }
 
@@ -319,10 +319,7 @@ footer {
 	.project.container {
 		width: 100vw;
 	}
-	
-	nav li {
-		font-size: 0.7rem;
-	}	
+		
 	
 	.logo {
 		display: none;
@@ -341,7 +338,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 415px) {	
+@media screen and (max-width: 475px) {	
 	
 	
 	footer {
@@ -359,6 +356,10 @@ footer {
 		padding: 0 0 0 20px;
 	}
 	
+	nav li {
+		font-size: 0.7rem;
+	}
+	
 	.spinner {
 		display: inline-block;
 		width: 4rem;
@@ -369,3 +370,4 @@ footer {
 		animation: spin 3s 2;
 	}
 }
+
