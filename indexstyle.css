@@ -104,7 +104,6 @@ li a:hover {
 }
 
 
-
 /*Body Styling*/
 
 .container {
@@ -176,7 +175,7 @@ li a:hover {
 
 .aboutmebackground {
 	background-image: url(AboutMeBG3.jpg);
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
