@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 	
 /*General CSS - normalize file contains most of it */
 	
@@ -15,57 +15,53 @@
 
 body {
 	font-size: 62.5%;
-	font-family: "Hind Guntur";
-	font-weight: 300;
+	font-family: "Montserrat", Helvetica;
+	font-weight: 200;
 	color: #000500;
 	background-color: #edeef2;
 }
-/* Colours
-
-Background: #edeef2 ( White)
-Borders: #CED3DC (Grey)
-Black ish: #000500
-
-
-Hover color: #ABA9C3 (Lilac)
-Accents: #88292F (Red)
-
-*/
 
 
 /*Text*/
 
 h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 	font-family: "Josefin Sans";
+	color: #edeef2;
 	padding: 0 0 0 20px;
 }
 
 h2 {
 	font-size: 2rem;
+	font-family: "Josefin Sans";
 	text-align: center;
-	font-weight: 200;
-	padding: 50px 0 0 0;
+	padding: 30px 0 0 0;
+	margin: 0;
 }
 
 h3 {
 	font-size: 1.5rem;
+	font-weight: 300;
 }
 
 h4 {
-	font-size: 1rem;
-	font-weight: 200;
+	font-size: 0.9rem;
+	margin: 10px 20px;
+	font-weight: 400;
 }
+
 h6 {
 	font-size: 0.9rem;
+	font-weight: 400;
 	padding: 20px 0 0 0;
-	font-weight: 100;
 	margin: 0;
 }
 
 p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	text-align: center;
+	margin: 0 20px;
+	line-height: 1.2;
 }
 
 /*Nav Bar*/
@@ -73,20 +69,22 @@ p {
 nav {
 	overflow: hidden;
 	position: fixed;
-	display: flex;
 	top: 0;
 	width: 100%;
 	margin: 0;
-	padding: 0 0 5px 0;
-	font-size: 1.5rem;
-	background-color: #edeef2;
+	font-size: 1.2rem;
+	background-image: linear-gradient(#ece6e5, #ffffff, #ece6e5);
+	opacity: 0.9;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
 }
 
 li {
-	display: inline;
 	list-style-type: none;
-	padding: 0 0 20px 0;
-
 }
 
 li a {
@@ -94,12 +92,46 @@ li a {
 	text-decoration: none;
 	color: #000500;
 	border-right: 1px solid #000500;
+	margin: 0;
+}
+
+.lastnav a {
+	border-right: none;
 }
 
 li a:hover {
-	background-color: #ABA9C3;
+	font-weight: 400;
 }
 
+
+
+/* Spinner */
+
+@keyframes spin {
+  0%, 100% {
+	  transform: rotate(none);
+  }
+  50% {
+	  transform: rotate(180deg);
+  }
+ 
+}
+
+
+
+.spinner {
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #edeef2;
+	color: #000500;
+	margin: 2px;
+	animation: spin 3s 2;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
 
 
 /*Body Styling*/
@@ -117,6 +149,8 @@ li a:hover {
 .intropage .container {
 	height: 100vh;
 	align-items: center;
+	background-image: url(handshake.jpg);
+	background-position: center top;
 }
 
 .projectbox {
@@ -138,7 +172,7 @@ li a:hover {
   	object-fit: cover;
 	width: 100%;
 	height: 200px;
-  	background-color: #CED3DC;
+  	background-color: #b0bfd5;
 }
 
 .projectinfo {
@@ -164,16 +198,29 @@ li a:hover {
     border: 1px solid #CED3DC;
 }
 
+.aboutmebox a {
+	text-decoration: none;
+	color: #000500;
+}
+
 .aboutmebackground {
 	background-image: url(AboutMeBG3.jpg);
-	background-size: auto 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
+.aboutme p {
+	margin: 20px 10px;
+}
+
+.container.aboutmebackground {
+	align-items: center;
+}
+
 .portfolio,
 footer {
-	background-color: #ABA9C3;
+	background-color: #ece6e5;
 }
 
 .container.project {
@@ -194,19 +241,16 @@ footer {
 }
 
 
-
-
 /* Social Buttons */
 
  /* Style all font awesome icons */
  
-.fa {
- 	padding: 20px;
-  	font-size: 1rem;
-  	width: 50px;
+.fab {
+ 	padding: 10px;
+  	font-size: 2.5rem;
   	text-align: center;
   	text-decoration: none;
-	margin: 5px;
+	margin: 0 5px;
 }
 
 /* Add a hover effect */
@@ -231,6 +275,12 @@ footer {
  	background: #24292e;
   	color: #ffffff;
 } 
+
+.fa-dev {
+ 	background: #000500;
+  	color: #ffffff;
+} 
+
 
 
 /* Media Queries */
@@ -268,12 +318,28 @@ footer {
 
 @media screen and (max-width: 380px) {	
 	nav li {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}	
 	footer {
 		box-shadow: none;
 	}	
+	.intropage .container {
+		background-image: none;
+	}
+	h1 {
+		font-size: 4rem;
+		font-family: "Josefin Sans";
+		color: #000500;
+		padding: 0 0 0 20px;
+	}
+	.spinner {
+		display: inline-block;
+		width: 4rem;
+		height: 4rem;
+		background-color: #000500;
+		color: #edeef2;
+		margin: 2px;
+		animation: spin 3s 2;
+	}
 }
-
-
 
