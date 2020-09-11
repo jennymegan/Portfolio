@@ -62,6 +62,10 @@ p {
 	line-height: 1.2;
 }
 
+br {
+	display: none;
+}
+
 /*Nav Bar*/
 
 nav {
@@ -336,9 +340,9 @@ footer {
 	ul {
 		margin-bottom: 18px;
 	}
-	h1 span::before {
-	  content: "\A";
-	  white-space: pre;
+	
+	br {
+		display: initial;
 	}
 }
 
