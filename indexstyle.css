@@ -336,6 +336,10 @@ footer {
 	ul {
 		margin-bottom: 18px;
 	}
+	h1 span::before {
+	  content: "\A";
+	  white-space: pre;
+	}
 }
 
 @media screen and (max-width: 475px) {	
